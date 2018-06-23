@@ -9,8 +9,8 @@ import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem,
 const header = (props) => {
     return(
         <div>
-        <Navbar color="dark" dark expand="md">
-          <NavbarBrand className="text-white" href="/">Percise Diagnostics</NavbarBrand>
+        <Navbar style={{paddingLeft: 300, background: 'black', padding: 20}} dark= "true" expand="md">
+          <NavbarBrand className="text-white" href="/"> <h4>Percise Diagnostics</h4></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse navbar>
             <Nav  className="ml-auto" navbar >
@@ -41,7 +41,7 @@ const header = (props) => {
                 Pathology Reporting
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>
+                  <DropdownItem color="danger">
                     Option 1
                   </DropdownItem>
                   <DropdownItem>
